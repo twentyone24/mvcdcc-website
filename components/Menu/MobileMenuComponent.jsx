@@ -5,12 +5,13 @@ const MobileMenuComponent = () => {
     <div className="menu">
       {/* TODO add active link heighlight */}
       <ul>
-        <MobileSingleMenu href="/#">What we do</MobileSingleMenu>
-        <MobileSingleMenu href="/#">Join our team</MobileSingleMenu>
-        <MobileSingleMenu href="/#">News & events</MobileSingleMenu>
-        <MobileSingleMenu href="/#">About us</MobileSingleMenu>
-        <MobileSingleMenu href="/#">Contact us</MobileSingleMenu>
-        <MobileSingleMenu href="/#">Staff Login</MobileSingleMenu>
+        {menusList.map(({ name, url }) => {
+          return (
+            <MobileSingleMenu key={name} href={url}>
+              {name}
+            </MobileSingleMenu>
+          );
+        })}
       </ul>
     </div>
   );

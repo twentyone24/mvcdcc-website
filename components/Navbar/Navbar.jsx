@@ -54,6 +54,7 @@ const Navbar = () => {
             alt="logo"
             height={78}
             href={urls.home}
+            width={200}
           />
 
           <MenuComponent />

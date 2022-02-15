@@ -11,6 +11,8 @@ const urls = {
   enrollmentForm: "/enrollment-form",
   whatWeDo: "/what-we-do",
   aboutUs: "/about-us",
+  joinOurTeam: "/join-our-team",
+  newsAndEvents: "/news-and-events",
   // What-we-do links
   hightScope: "/hight-scope",
   consciousDiscipline: "/cd",
