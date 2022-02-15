@@ -1,3 +1,4 @@
+import { menusList } from "../../data/menus";
 import MobileSingleMenu from "./MobileSingleMenu";
 
 const MobileMenuComponent = () => {

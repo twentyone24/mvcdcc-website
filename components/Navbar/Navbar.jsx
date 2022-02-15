@@ -69,6 +69,7 @@ const Navbar = () => {
             alt="mobile-logo"
             height={38}
             href={urls.home}
+            width={33}
           />
 
           <div className="mobile-menu-button" onClick={handleToggle}>
