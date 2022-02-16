@@ -1,6 +1,9 @@
+import Image from "next/image";
+import { imageLoader } from "../../loader";
+
 const MyImageComponent = ({
   src,
-  alt,
+  alt = "image",
   width = "100%",
   href,
   height,
@@ -8,6 +11,14 @@ const MyImageComponent = ({
 }) => {
   let ImgComponent = (
     <img src={src} width={width} height={height} alt={alt} {...props} />
+    // <Image
+    //   height={height}
+    //   loader={imageLoader}
+    //   alt={alt}
+    //   src={src}
+    //   width={width}
+    //   {...props}
+    // />
   );
 
   // If a link

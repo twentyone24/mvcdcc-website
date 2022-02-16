@@ -1,10 +1,11 @@
 import MyLink from "../MyLink";
 
-const SingleMenu = (props) => {
+const SingleMenu = ({ active, ...props }) => {
   // TODO Highlight active menu
+  const newClass = "menu text-primary " + (active ? "active" : "");
 
   return (
-    <li className="menu text-primary">
+    <li className={newClass}>
       <MyLink {...props}>{props.children}</MyLink>
     </li>
   );

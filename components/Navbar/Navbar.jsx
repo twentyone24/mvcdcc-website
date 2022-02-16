@@ -12,11 +12,12 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
-    setToggle(!toggle);
+    setToggle((currToggle) => !currToggle);
   };
 
   useEffect(() => {
     const navbarEle = document.getElementById("navbar");
+    const newHiddenTop = "-500px";
 
     let lastScroll = 0;
     window.onscroll = function () {
@@ -26,18 +27,19 @@ const Navbar = () => {
       if (currentScroll > 0 && lastScroll <= currentScroll) {
         lastScroll = currentScroll;
         // On Scroll Down
-        if (navbarEle.style.top !== "-200px") {
-          navbarEle.style.top = "-200px";
+        if (navbarEle.style.top !== newHiddenTop) {
+          navbarEle.style.top = newHiddenTop;
         }
 
         document.getElementById("navbar").classList.remove("show");
       } else {
         // On Scroll Up
         lastScroll = currentScroll;
-        if (navbarEle.style.top === "-200px") {
+        if (navbarEle.style.top === newHiddenTop) {
           navbarEle.style.top = "0";
         }
       }
+
       if (toggle) {
         handleToggle();
       }
@@ -115,14 +117,16 @@ const Navbar = () => {
           </div>
         </div>
 
-        {toggle && (
-          <>
-            <div className="navbar-mobile-menu">
-              <MobileMenuComponent />
-              {/* <MenuComponent /> */}
-            </div>
-          </>
-        )}
+        <div className="container-large navbar-container">
+          {toggle && (
+            <>
+              <div className="navbar-mobile-menu">
+                <MobileMenuComponent />
+                {/* <MenuComponent /> */}
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
