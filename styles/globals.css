@@ -290,11 +290,18 @@ p {
   object-position: center center;
 }
 
+.flex-wrap-only {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 /* Join Our Team */
 /* Career Opportunities */
 #career-opportunities,
 .page-hero-center-and-full {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -451,7 +458,7 @@ p {
 .my-btn-center {
   margin: auto;
 }
-.my-simple-btn {
+/* .my-simple-btn {
   box-shadow: none;
   border: none;
   background-color: var(--primary);
@@ -461,7 +468,7 @@ p {
 .my-simple-btn:hover {
   box-shadow: none;
   border: none;
-}
+} */
 
 /* .container {
     max-width: 1200px;
@@ -666,11 +673,22 @@ p {
     flex-direction: column;
   }
 
+  #class-room-youtube-videos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .youtube-video {
+    max-width: 100%;
+  }
   .grid,
   .grid-3,
   .grid-card-3 {
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display: grid; */
+    grid-template-columns: 1fr !important;
+  }
+  .grid-2-only {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

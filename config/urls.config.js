@@ -14,6 +14,7 @@ const urls = {
   joinOurTeam: "/join-our-team",
   newsAndEvents: "/news-and-events",
   // What-we-do links
+
   hightScope: "/hight-scope",
   consciousDiscipline: "/cd",
   tripleP: "/tp",

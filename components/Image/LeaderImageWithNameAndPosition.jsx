@@ -10,7 +10,7 @@ const LeaderImageWithNameAndPosition = ({ name, position, src }) => {
         minHeight={500}
         src={src}
         overlayColor={"var(--light-blue)"}
-        overlayOpacity={0.1}
+        overlayopacity={0.1}
       />
 
       {/* TODO create it more responsive */}

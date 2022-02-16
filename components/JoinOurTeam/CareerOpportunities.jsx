@@ -3,11 +3,16 @@ import MyImageComponent from "../Image/MyImageComponent";
 import MyLink from "../MyLink";
 import MyUnorderListContainer from "../UnorderedList/MyUnorderListContainer";
 import LargeContainerNoFlexColorSection from "../Sections/LargeContainerNoFlexColorSection";
+import NavbarGap from "../Navbar/NavbarGap";
 
 const CareerOpportunities = () => {
   return (
     <div id="career-opportunities">
-      <LargeContainerNoFlexColorSection borderEnabled={false}>
+      <LargeContainerNoFlexColorSection
+        borderEnabled={false}
+        paddingVertEnabled={false}
+      >
+        {/* <br /> */}
         <h3>Career opportunities</h3>
         <div className="grid">
           <div className="left">
@@ -15,7 +20,7 @@ const CareerOpportunities = () => {
               <iframe
                 width="560"
                 style={{ maxWidth: "100%" }}
-                height="315"
+                height="450"
                 src="https://www.youtube.com/embed/1WNtYflH4Ug"
                 title="YouTube video player"
                 frameBorder="0"

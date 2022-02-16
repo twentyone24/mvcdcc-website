@@ -9,7 +9,7 @@ const ClassRoomVideos = () => {
     <div id="class-room-videos">
       <LargeContainerNoFlexColorSection>
         <h3>Classroom Vidoes</h3>
-        <div className="grid-3">
+        <div className="grid-card-3" id="class-room-youtube-videos">
           <YoutubeEmbeedWrapper>
             <iframe
               width="100%"

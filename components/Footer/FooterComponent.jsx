@@ -1,11 +1,12 @@
 import urls from "../../config/urls.config";
 import EnrollmentButton from "../Buttons/EnrollmentButton";
 import ColorSection from "../Sections/ColorSection";
+import LargeContainerNoFlexColorSection from "../Sections/LargeContainerNoFlexColorSection";
 import FooterSocialIcons from "./FooterSocialIcons";
 
 const FooterComponent = () => {
   return (
-    <ColorSection
+    <LargeContainerNoFlexColorSection
       borderEnabled={false}
       backgroundColor={"var(--secondary)"}
       containerEnabled={false}
@@ -38,7 +39,7 @@ const FooterComponent = () => {
 
         <EnrollmentButton />
       </div>
-    </ColorSection>
+    </LargeContainerNoFlexColorSection>
   );
 };
 

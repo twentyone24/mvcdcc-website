@@ -5,23 +5,27 @@ import ColorSection from "../Sections/ColorSection";
 
 const FollowUsHeadstartSection = () => {
   return (
-    <ColorSection paddingVertEnabled={false}>
-      {/* <div className="flex"> */}
-      <h3 className="text-primary">FOLLOW US ON SOCIAL MEDIA</h3>
-      <MyMainButton href={urls.facebookPage}>
-        <FaFacebookF />
-      </MyMainButton>
-      <MyMainButton href={urls.twitterPage}>
-        <FaTwitter />
-      </MyMainButton>
-      <MyMainButton href={urls.instagramPage}>
-        <FaInstagram />
-      </MyMainButton>
-      <MyMainButton href={urls.youtubePage}>
-        <FaYoutube />
-      </MyMainButton>
-      {/* </div> */}
-    </ColorSection>
+    <div id="follow-us-head-start-section">
+      <ColorSection paddingVertEnabled={false}>
+        {/* <div className="flex"> */}
+        <h3 className="text-primary">FOLLOW US ON SOCIAL MEDIA</h3>
+        <div className="follow-links flex-wrap-only">
+          <MyMainButton href={urls.facebookPage}>
+            <FaFacebookF />
+          </MyMainButton>
+          <MyMainButton href={urls.twitterPage}>
+            <FaTwitter />
+          </MyMainButton>
+          <MyMainButton href={urls.instagramPage}>
+            <FaInstagram />
+          </MyMainButton>
+          <MyMainButton href={urls.youtubePage}>
+            <FaYoutube />
+          </MyMainButton>
+        </div>
+        {/* </div> */}
+      </ColorSection>
+    </div>
   );
 };
 

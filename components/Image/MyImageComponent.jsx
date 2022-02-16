@@ -11,14 +11,17 @@ const MyImageComponent = ({
 }) => {
   let ImgComponent = (
     <img src={src} width={width} height={height} alt={alt} {...props} />
-    // <Image
-    //   height={height}
-    //   loader={imageLoader}
-    //   alt={alt}
-    //   src={src}
-    //   width={width}
-    //   {...props}
-    // />
+    // <div style={{ width: "100%" }}>
+    //   <Image
+    //     height={height}
+    //     loader={imageLoader}
+    //     alt={alt}
+    //     src={src}
+    //     width={width}
+    //     {...props}
+    //     layout="responsive"
+    //   />
+    // </div>
   );
 
   // If a link

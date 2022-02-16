@@ -25,14 +25,14 @@ const MyMainButton = ({
 };
 
 const MyBtn = ({ className, children, shadowEnabled = true, ...props }) => {
+  let style = {};
+  if (!shadowEnabled) {
+    style = {
+      boxShadow: "unset",
+    };
+  }
   return (
-    <div
-      className={className}
-      style={{
-        boxShadow: shadowEnabled ? "initial" : "unset",
-      }}
-      {...props}
-    >
+    <div className={className} style={style} {...props}>
       <span style={{ fontSize: "18px" }}>{children}</span>
     </div>
   );

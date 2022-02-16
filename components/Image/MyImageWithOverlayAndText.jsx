@@ -2,7 +2,7 @@ const MyImageWithOverlayAndText = ({
   src,
   overlayColor,
   children,
-  overlayOpacity,
+  overlayopacity,
   minHeight,
   height,
 }) => {
@@ -26,7 +26,7 @@ const MyImageWithOverlayAndText = ({
           width: "100%",
           height: "100%",
           background: overlayColor,
-          opacity: overlayOpacity,
+          opacity: overlayopacity,
         }}
       ></div>
     </div>

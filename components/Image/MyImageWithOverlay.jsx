@@ -4,13 +4,14 @@ const MyImageWithOverlay = ({
   src,
   overlayColor,
   children,
-  overlayOpacity,
+  overlayopacity,
   minHeight,
   height,
+  alt,
 }) => {
   return (
     <div style={{ position: "relative", overflow: "hidden" }}>
-      <MyImageComponent src={src} />
+      <MyImageComponent src={src} alt={alt ? alt : "overlay-image"} />
       <div
         className="image-overlay"
         style={{
@@ -18,7 +19,7 @@ const MyImageWithOverlay = ({
           width: "100%",
           height: "100%",
           background: overlayColor,
-          opacity: overlayOpacity,
+          opacity: overlayopacity,
         }}
       ></div>
     </div>

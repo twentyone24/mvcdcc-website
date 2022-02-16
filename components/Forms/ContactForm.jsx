@@ -40,7 +40,7 @@ const ContactForm = () => {
           className="above-label"
           required={true}
         />
-        <div className="form-names-container grid">
+        <div className="form-names-container grid grid-2-only">
           <MyInputWithLabel
             // autocomplete={false}
             labelDown="First Name"

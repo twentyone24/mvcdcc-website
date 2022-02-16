@@ -8,6 +8,7 @@ const HomeVideoSection = () => {
       <MyImageComponent src="https://images.squarespace-cdn.com/content/v1/60c8f0b8fcff251cbdeb6591/1626451927328-630DIQZFV5JTU2X63JCT/MVCDC_PS.png?format=300w" />
       <YoutubeEmbeedWrapper>
         <iframe
+          className="youtube-video"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/pG-5wcmjDVU"
