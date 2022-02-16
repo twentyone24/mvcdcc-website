@@ -1,7 +1,7 @@
 import NavbarGap from "../components/Navbar/NavbarGap";
 import LargeContainerNoFlexColorSection from "../components/Sections/LargeContainerNoFlexColorSection";
 
-const locations = () => {
+const Locations = () => {
   return (
     <div id="locations">
       <NavbarGap />
@@ -27,9 +27,10 @@ const locations = () => {
           //   src="//jsfiddle.net/0cps2voh/3/embed/result/dark/"
           src="//jsfiddle.net/0cps2voh/3/embed/result/light/"
         ></script>
+        <NavbarGap />
       </LargeContainerNoFlexColorSection>
     </div>
   );
 };
 
-export default locations;
+export default Locations;

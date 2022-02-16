@@ -1,6 +1,7 @@
 const MyMainButton = ({
   className = "bg-primary",
   children,
+  shadowEnabled = true,
   href,
   ...props
 }) => {
@@ -9,20 +10,32 @@ const MyMainButton = ({
   if (href) {
     return (
       <a href={href}>
-        <div className={buttonClass} {...props}>
-          {/* <h1 style={{ fontSize: "18px" }}>{children}</h1> */}
-          <span style={{ fontSize: "18px" }}>{children}</span>
-        </div>
+        <MyBtn className={buttonClass} {...props}>
+          {children}
+        </MyBtn>
       </a>
     );
   } else {
     return (
-      <div className={buttonClass} {...props}>
-        {/* <h1 style={{ fontSize: "18px" }}>{children}</h1> */}
-        <span style={{ fontSize: "18px" }}>{children}</span>
-      </div>
+      <MyBtn className={buttonClass} {...props}>
+        {children}
+      </MyBtn>
     );
   }
+};
+
+const MyBtn = ({ className, children, shadowEnabled = true, ...props }) => {
+  return (
+    <div
+      className={className}
+      style={{
+        boxShadow: shadowEnabled ? "initial" : "unset",
+      }}
+      {...props}
+    >
+      <span style={{ fontSize: "18px" }}>{children}</span>
+    </div>
+  );
 };
 
 export default MyMainButton;

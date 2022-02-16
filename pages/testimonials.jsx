@@ -1,4 +1,5 @@
 import TestimonalCard from "../components/Cards/TestimonalCard";
+import NavbarGap from "../components/Navbar/NavbarGap";
 import LargeContainerNoFlexColorSection from "../components/Sections/LargeContainerNoFlexColorSection";
 
 const Testimonials = () => {
@@ -11,6 +12,7 @@ const Testimonials = () => {
   return (
     <div id="testimonials-page" className="page-hero-center-and-full">
       <LargeContainerNoFlexColorSection borderEnabled={false}>
+        <NavbarGap />
         <h2>What MVCDC families say</h2>
 
         <div className="grid-card-3">

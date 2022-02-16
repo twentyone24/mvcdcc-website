@@ -20,6 +20,8 @@ const urls = {
   monthMenu: "/MVCDC21_Preschool-5-week-monthly-menu.pdf",
   // Join-our-team links
   careerCenter: "/recruiters",
+  // Contact-us links
+  donateToUs: "/about-us/#invest",
 };
 
 export default urls;
