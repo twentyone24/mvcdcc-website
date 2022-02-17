@@ -3,14 +3,26 @@ import { imageLoader } from "../../loader";
 
 const MyImageComponent = ({
   src,
-  alt = "image",
+  alt = "floating-image",
   width = "100%",
   href,
   height,
+  className,
+  reveal = true,
   ...props
 }) => {
+  const revealClass = reveal ? "reveal " : " ";
+  const propClassName = className ? className : " ";
+  const currentClass = `${revealClass} ${propClassName}`;
   let ImgComponent = (
-    <img src={src} width={width} height={height} alt={alt} {...props} />
+    <img
+      className={currentClass}
+      src={src}
+      width={width}
+      height={height}
+      alt={alt}
+      {...props}
+    />
     // <div style={{ width: "100%" }}>
     //   <Image
     //     height={height}

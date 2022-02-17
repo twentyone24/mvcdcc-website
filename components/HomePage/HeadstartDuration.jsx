@@ -11,12 +11,14 @@ const HeadstartDuration = () => {
     >
       <div className="flex">
         <MyImageComponent
+          reveal={false}
           src="https://images.squarespace-cdn.com/content/v1/60c8f0b8fcff251cbdeb6591/1fc282a7-e15d-40a1-a392-ee62d4d1137b/EHS+homepage+PINK.png?format=1000w"
           height={400}
           href={urls.whatWeDo + "#ehs"}
           width={"100%"}
         />
         <MyImageComponent
+          reveal={false}
           height={400}
           width={"100%"}
           href={urls.whatWeDo + "#hs"}

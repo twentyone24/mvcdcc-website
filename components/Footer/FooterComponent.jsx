@@ -1,3 +1,4 @@
+import Script from "next/script";
 import urls from "../../config/urls.config";
 import EnrollmentButton from "../Buttons/EnrollmentButton";
 import ColorSection from "../Sections/ColorSection";
@@ -39,6 +40,8 @@ const FooterComponent = () => {
 
         <EnrollmentButton />
       </div>
+      {/* <Script src="/scrollreveal.js"></Script> */}
+      <Script src="/scrollreveal.js"></Script>
     </LargeContainerNoFlexColorSection>
   );
 };

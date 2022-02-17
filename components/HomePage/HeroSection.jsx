@@ -13,9 +13,10 @@ const HeroSection = () => {
         backgroundImageUrl={imageUrl}
         overlayColor={overlayColor}
         // maxHeight={"70vh"}
-        overlayOpacity={0.7}
+        // overlayOpacity={0.7}
         minHeight={"70vh"}
         className="section hero-with-background-section"
+        reveal={false}
       >
         <div className="hero-section-container content-container">
           <div className="gap"></div>.

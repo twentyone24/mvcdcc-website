@@ -5,6 +5,6 @@ export const menusList = [
   { name: "Join our team", url: urls.joinOurTeam },
   { name: "News & events", url: urls.newsAndEvents },
   { name: "About us", url: urls.aboutUs },
-  { name: "Contect us", url: urls.contactUs },
+  { name: "Contact us", url: urls.contactUs },
   { name: "Staff Login", url: urls.home },
 ];

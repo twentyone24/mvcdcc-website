@@ -8,6 +8,8 @@ import MobileMenuComponent from "../Menu/MobileMenuComponent";
 import urls from "../../config/urls.config";
 import MyImageComponent from "../Image/MyImageComponent";
 
+// import dynamic from "next/dynamic";
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -16,6 +18,23 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // let done = false;
+    // const doSomething = async () => {
+    //   try {
+    //     if (!done) {
+    //       // const ScrollReveal = dynamic(import("scrollreveal"), {});
+    //       // const ScrollReveal = require("scrollreveal");
+
+    //       console.log(ScrollReveal);
+    //       ScrollReveal().reveal(".reveal");
+    //     }
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    // };
+    // doSomething();
+
+    const require = "../../scroll-reveal";
     const navbarEle = document.getElementById("navbar");
     const newHiddenTop = "-500px";
 
@@ -44,6 +63,10 @@ const Navbar = () => {
         handleToggle();
       }
     };
+
+    return () => {
+      done = true;
+    };
   }, []);
 
   return (
@@ -52,6 +75,7 @@ const Navbar = () => {
         <div className="container-large navbar-container">
           {/* Logo */}
           <MyImageComponent
+            reveal={false}
             src="/images/logo.png"
             alt="logo"
             height={78}
@@ -67,6 +91,7 @@ const Navbar = () => {
         <div className="container-large navbar-mobile-container">
           {/* Logo */}
           <MyImageComponent
+            reveal={false}
             src="/images/favicon.png"
             alt="mobile-logo"
             height={38}

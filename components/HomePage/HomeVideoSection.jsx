@@ -5,7 +5,10 @@ import YoutubeEmbeedWrapper from "../YoutubeEmbeedWrapper";
 const HomeVideoSection = () => {
   return (
     <ColorSection backgroundColor="var(--secondary)">
-      <MyImageComponent src="https://images.squarespace-cdn.com/content/v1/60c8f0b8fcff251cbdeb6591/1626451927328-630DIQZFV5JTU2X63JCT/MVCDC_PS.png?format=300w" />
+      <MyImageComponent
+        // className="reveal"
+        src="https://images.squarespace-cdn.com/content/v1/60c8f0b8fcff251cbdeb6591/1626451927328-630DIQZFV5JTU2X63JCT/MVCDC_PS.png?format=300w"
+      />
       <YoutubeEmbeedWrapper>
         <iframe
           className="youtube-video"

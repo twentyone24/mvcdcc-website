@@ -5,13 +5,19 @@ const MyImageWithOverlayAndText = ({
   overlayopacity,
   minHeight,
   height,
+  className = "",
+  imageStyles = {},
 }) => {
   return (
-    <div style={{ position: "relative", overflow: "hidden" }}>
+    <div
+      className={className}
+      style={{ position: "relative", overflow: "hidden" }}
+    >
       <div
         className="image-with-overlay-container"
         style={{
           background: `url("${src}")`,
+          ...imageStyles,
           //   minHeight: minHeight,
           //   height,
           //   maxWidth: "100%",

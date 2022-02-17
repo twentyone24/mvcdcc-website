@@ -14,6 +14,7 @@ const HomeOpportunitySection = () => {
         // height={300}
         href={urls.aboutUs}
         src="https://images.squarespace-cdn.com/content/v1/60c8f0b8fcff251cbdeb6591/9be586d8-368a-46fa-9097-c60b2acec933/image-asset.png?format=750w"
+        className="reveal"
       />
     </ColorSection>
   );

@@ -14,6 +14,7 @@ const HomeJoinCarouselSection = () => {
       <MyImageComponent
         src="https://images.squarespace-cdn.com/content/v1/60c8f0b8fcff251cbdeb6591/20f5e5db-f2d6-4cf3-a3e9-6010cf18d03c/MAP3.jpg?format=2500w"
         width={"100%"}
+        reveal={false}
         height={400}
         href="#"
         style={{

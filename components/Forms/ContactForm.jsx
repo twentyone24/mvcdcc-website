@@ -21,7 +21,13 @@ const ContactForm = () => {
       let emailValue = event.target.email.value;
       let messageValue = event.target.message.value;
 
+      alert("Thank You. Your form has been filed");
       console.log(event.target);
+
+      event.target["first-name"].value = "";
+      event.target["last-name"].value = "";
+      event.target.email.value = "";
+      event.target.message.value = "";
 
       // TODO do something with form values
       // console.log(newForm);
