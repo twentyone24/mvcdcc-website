@@ -1,3 +1,60 @@
+
+# MVCDC - School Project frontend
+
+This project was initially created with `ReactJs` but for static build and simple routing it was migrated to `NextJs`
+
+Therefore this project uses mostly plain reactjs and uses plain css for styling
+
+`pages` folder include all the pages and `components` folder include all the components of pages.
+
+## Basic Commands for NextJs
+
+```bash
+npm install	# Install all dependencies
+
+npm run dev	# Start Development server
+
+npm run export	# Export static build
+
+npm run start	# Run build on server port 3000
+```
+
+## Pages
+
+`pages` folder includes all the pages and thier child components are in `components` folder
+
+`_app.js` file includes the template for all the pages (i.e Navbar <Page> Footer ).
+
+else other files in `pages` folder are pages routes files.
+
+Currently `styles/globals.css` includes all css
+
+## Data
+
+`data/weeklyreports.js` includes data of Weekly-Reports for News and Events page
+
+`data/menus.js` includes data related to navigation links
+
+## Config
+
+`config` folder include `urls` for pages, menus, links and buttons in `config/urls.config.js` file.
+
+## Components
+
+`components` folder include all the components of pages.
+
+few components received/passes nested child components props.
+
+Mostly re-useable code is converted into small components and if there should components with some more changes then it is converted into more components. 
+
+for example: 
+`components/Sections/ColorSection.jsx` file include the Section With Colored Background with default padding, border, and small container which is mainly used for **Home Page** only.
+
+so `components/Sections/LargeContainerNoFlexColorSection.jsx` is create on top of `ColorSection` with large container and without default flex property. It also passes all the props to `ColorSection` so that if one section is changed then every container/section should change.
+
+
+# NextJs Basics
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
